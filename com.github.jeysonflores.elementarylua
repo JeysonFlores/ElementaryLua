@@ -1,0 +1,6 @@
+#! /usr/bin/luajit
+--local f, err = loadfile("src/Application.lua") 
+package.path = package.path .. ";/usr/bin/elementarylua/?.lua"
+require "src.Application"
+
+app:run { arg[0], ... }

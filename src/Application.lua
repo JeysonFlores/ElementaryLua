@@ -5,9 +5,10 @@ local Granite = lgi.require('Granite')
 local GLib = lgi.require('GLib')
 
 
+package.path = package.path .. ";/usr/bin/elementarylua/?.lua"
 require "src.MainWindow"
 
-local app = Gtk.Application {
+app = Gtk.Application {
     application_id = "com.github.jeysonflores.elementarylua"
 }
 
@@ -43,5 +44,3 @@ function app:on_activate()
     main_window:show_all()
 end
 
-
-app:run { arg[0], ... }
