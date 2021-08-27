@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2021 Jeyson Antonio Flores Deras (https://github.com/JeysonFlores/Elementary-Lua) -->
+<component type="desktop">
+	<id>com.github.jeysonflores.elementarylua</id>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>GPL-3.0+</project_license>
+	<name>Elementary-Lua</name>
+	<summary>It's just a template</summary>
+	<description>
+		<p>
+			Lua + GTK + Granite + Flatpak
+		</p>
+		<p>
+			Features Include:
+		</p>
+		<ul>
+			<li>eOS 6 Dark Mode Support</li>
+			<li>GSchema Support</li>
+		</ul>
+	</description>
+	<provides>
+		<binary>com.github.jeysonflores.elementarylua</binary>
+	</provides>
+	<releases>
+    <release version="1.0.0" date="2021-08-27">
+      <description>
+        <p>First Release</p>
+      </description>
+    </release>
+	</releases>
+	<screenshots>
+		<screenshot type="default">
+			<image>https://raw.githubusercontent.com/JeysonFlores/ElementaryLua/main/data/assets/screenshots/screenshot-1.png</image>
+		</screenshot>
+		<screenshot>
+			<image>https://raw.githubusercontent.com/JeysonFlores/ElementaryLua/main/data/assets/screenshots/screenshot-2.png</image>
+		</screenshot>
+	</screenshots>
+	<developer_name>Jeyson Antonio Flores Deras</developer_name>
+	<launchable type="desktop-id">com.github.jeysonflores.elementarylua.desktop</launchable>
+	<url type="homepage">https://github.com/JeysonFlores/ElementaryLua</url>
+	<url type="bugtracker">https://github.com/JeysonFlores/ElementaryLua/issues</url>
+	<url type="help">https://github.com/JeysonFlores/ElementaryLua/issues</url>
+	<url type="translate">https://github.com/JeysonFlores/ElementaryLua/issues</url>
+	<update_contact>jeyson.flores@hotmail.com</update_contact>
+	<content_rating type="oars-1.1">
+		<content_attribute id="violence-cartoon">none</content_attribute>
+		<content_attribute id="violence-fantasy">none</content_attribute>
+		<content_attribute id="violence-realistic">none</content_attribute>
+		<content_attribute id="violence-bloodshed">none</content_attribute>
+		<content_attribute id="violence-sexual">none</content_attribute>
+		<content_attribute id="violence-desecration">none</content_attribute>
+		<content_attribute id="violence-slavery">none</content_attribute>
+		<content_attribute id="violence-worship">none</content_attribute>
+		<content_attribute id="drugs-alcohol">none</content_attribute>
+		<content_attribute id="drugs-narcotics">none</content_attribute>
+		<content_attribute id="drugs-tobacco">none</content_attribute>
+		<content_attribute id="sex-nudity">none</content_attribute>
+		<content_attribute id="sex-themes">none</content_attribute>
+		<content_attribute id="sex-homosexuality">none</content_attribute>
+		<content_attribute id="sex-prostitution">none</content_attribute>
+		<content_attribute id="sex-adultery">none</content_attribute>
+		<content_attribute id="sex-appearance">none</content_attribute>
+		<content_attribute id="language-profanity">none</content_attribute>
+		<content_attribute id="language-humor">none</content_attribute>
+		<content_attribute id="language-discrimination">none</content_attribute>
+		<content_attribute id="social-chat">none</content_attribute>
+		<content_attribute id="social-info">none</content_attribute>
+		<content_attribute id="social-audio">none</content_attribute>
+		<content_attribute id="social-location">none</content_attribute>
+		<content_attribute id="social-contacts">none</content_attribute>
+		<content_attribute id="money-purchasing">none</content_attribute>
+		<content_attribute id="money-gambling">none</content_attribute>
+	</content_rating>
+	<custom>
+		<value key="x-appcenter-color-primary">#efefef</value>
+		<value key="x-appcenter-color-primary-text">#508ff3</value>
+		<value key="x-appcenter-suggested-price">0</value>
+	</custom>
+	<kudos>
+		<kudo>HiDpiIcon</kudo>
+		<kudo>HighContrast</kudo>
+		<kudo>ModernToolkit</kudo>
+	</kudos>
+</component>
