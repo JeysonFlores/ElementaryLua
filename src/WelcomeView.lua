@@ -1,3 +1,6 @@
+package.path = package.path .. ";/app/bin/elementarylua/?.lua;/app/share/lua/5.1/?.lua"
+package.cpath = package.cpath .. ";/app/lib/lua/5.1/?.so"
+
 local lgi = require 'lgi'
 local Gtk = lgi.require('Gtk')
 local Granite = lgi.require('Granite')

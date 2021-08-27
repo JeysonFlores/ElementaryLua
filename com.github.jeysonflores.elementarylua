@@ -1,6 +1,8 @@
 #! /app/bin/luajit
 --local f, err = loadfile("src/Application.lua") 
-package.path = package.path .. ";/app/bin/elementarylua/?.lua"
+package.path = package.path .. ";/app/bin/elementarylua/?.lua;/app/share/lua/5.1/?.lua"
+package.cpath = package.cpath .. ";/app/lib/lua/5.1/?.so"
+
 require "src.Application"
 
 app:run { arg[0], ... }

@@ -13,14 +13,6 @@ finish-args:
   - '--system-talk-name=org.freedesktop.Accounts'
 
 modules:
-  - name: elementarylua
-    buildsystem: simple
-    build-commands:
-     - make install
-    sources:
-      - type: dir
-        path: .
-
   - name: luajit
     buildsystem: simple
     build-commands: 
@@ -30,3 +22,30 @@ modules:
         url: https://luajit.org/download/LuaJIT-2.0.5.tar.gz
         sha256: 874b1f8297c697821f561f9b73b57ffd419ed8f4278c82e05b48806d30c1e979
 
+  - name: luarocks
+    buildsystem: simple
+    build-commands: 
+    - pwd && ./configure --prefix=/app && make && make install PREFIX=/app
+    sources:
+      - type: archive
+        url: https://luarocks.org/releases/luarocks-3.7.0.tar.gz
+        sha256: 9255d97fee95cec5b54fc6ac718b11bf5029e45bed7873e053314919cd448551
+
+  - name: lgi
+    buildsystem: simple
+    build-options:
+      build-args:
+        - --share=network
+    build-commands:
+      - "luarocks install lgi"
+
+  - name: elementarylua
+    buildsystem: simple
+    build-commands:
+     - make install
+    sources:
+      - type: dir
+        path: .
+
+
+      
