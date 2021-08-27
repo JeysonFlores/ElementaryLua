@@ -29,7 +29,7 @@ main_window:add(welcome)
 local main_window_context = main_window:get_style_context():add_class("rounded")
 
 
-function main_window:on_destroy()
+function main_window:on_delete_event()
     
     local settings = Gio.Settings {
         schema_id = "com.github.jeysonflores.elementarylua"
@@ -38,16 +38,11 @@ function main_window:on_destroy()
     local root_x, root_y = main_window:get_position()
     local width, height = main_window:get_size()
 
-    print(width)
-    print(height)
-    print(root_x)
-    print(root_y)
+    settings:set_int("pos-x", root_x)
+    settings:set_int("pos-y", root_y)
 
-    settings:set_int("pos-x", 500)
-    settings:set_int("pos-y", 500)
+    settings:set_int("window-width", width)
+    settings:set_int("window-height", height)
 
-    settings:set_int("window-width", 600)
-    settings:set_int("window-height", 450)
-
-    Gtk.main_quit()
+    Gtk:main_quit()
 end
