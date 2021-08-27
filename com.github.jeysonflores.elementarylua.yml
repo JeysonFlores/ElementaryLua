@@ -1,0 +1,32 @@
+app-id: com.github.jeysonflores.elementarylua
+
+runtime: io.elementary.Platform
+runtime-version: '6'
+sdk: io.elementary.Sdk
+
+command: com.github.jeysonflores.elementarylua
+
+finish-args:
+  - '--share=ipc'
+  - '--socket=fallback-x11'
+  - '--socket=wayland'
+  - '--system-talk-name=org.freedesktop.Accounts'
+
+modules:
+  - name: elementarylua
+    buildsystem: simple
+    build-commands:
+     - make install
+    sources:
+      - type: dir
+        path: .
+
+  - name: luajit
+    buildsystem: simple
+    build-commands: 
+    - pwd && make && make install PREFIX=/app
+    sources:
+      - type: archive
+        url: https://luajit.org/download/LuaJIT-2.0.5.tar.gz
+        sha256: 874b1f8297c697821f561f9b73b57ffd419ed8f4278c82e05b48806d30c1e979
+

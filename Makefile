@@ -1,5 +1,5 @@
 .PHONY: all install uninstall
-PREFIX ?= /usr
+PREFIX ?= /app
 
 install:
 	install -D -m 0755 com.github.jeysonflores.elementarylua $(PREFIX)/bin/com.github.jeysonflores.elementarylua
@@ -9,7 +9,6 @@ install:
 	install -D -m 0644 data/com.github.jeysonflores.elementarylua.gschema.xml $(PREFIX)/local/share/glib-2.0/schemas/com.github.jeysonflores.elementarylua.gschema.xml
 	install -D -m 0644 data/com.github.jeysonflores.elementarylua.desktop $(PREFIX)/local/share/applications/com.github.jeysonflores.elementarylua.desktop
 	install -D -m 0644 data/assets/icons/com.github.jeysonflores.elementarylua.svg $(PREFIX)/share/icons/hicolor/scalable/apps/com.github.jeysonflores.elementarylua.svg
-	gtk-update-icon-cache $(PREFIX)/share/icons/hicolor
 	glib-compile-schemas $(PREFIX)/local/share/glib-2.0/schemas/
 
 uninstall:

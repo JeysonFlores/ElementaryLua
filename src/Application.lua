@@ -5,7 +5,7 @@ local Granite = lgi.require('Granite')
 local GLib = lgi.require('GLib')
 
 
-package.path = package.path .. ";/usr/bin/elementarylua/?.lua"
+package.path = package.path .. ";/app/bin/elementarylua/?.lua"
 require "src.MainWindow"
 
 app = Gtk.Application {

@@ -3,7 +3,7 @@ local Gtk = lgi.require('Gtk')
 local Handy = lgi.require('Handy')
 local Gio = lgi.require('Gio')
 
-package.path = package.path .. ";/usr/bin/elementarylua/?.lua"
+package.path = package.path .. ";/app/bin/elementarylua/?.lua"
 require "src.WelcomeView"
 -- Window Building
 
