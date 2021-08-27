@@ -7,3 +7,11 @@ ElementaryLua is a template for eOS applications, meaning that it's built over G
 # Features
  - ElementaryOS 6 Dark Mode Support
  - GSchema Support
+# Build & Run
+ ```
+git clone https://github.com/JeysonFlores/ElementaryLua
+cd ElementaryLua
+flatpak-builder build com.github.jeysonflores.elementarylua.yml --user --install --force-clean
+flatpak run com.github.jeysonflores.elementarylua
+ ```
+ 
