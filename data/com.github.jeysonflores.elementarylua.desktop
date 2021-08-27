@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Elementary Lua
+GenericName=Elementary Lua
+Comment=It's just a template
+Categories=Utility;
+Exec=com.github.jeysonflores.elementarylua
+Icon=com.github.jeysonflores.elementarylua
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=com.github.jeysonflores.elementarylua
+Keywords=Utility;
