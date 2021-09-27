@@ -5,4 +5,5 @@ package.cpath = package.cpath .. ";/app/lib/lua/5.1/?.so"
 
 require "src.Application"
 
+app = Application.new()
 app:run { arg[0], ... }
